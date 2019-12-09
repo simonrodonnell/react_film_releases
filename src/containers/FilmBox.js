@@ -1,5 +1,6 @@
 import React, { Component } from 'react'
 import FilmList from '../components/FilmList'
+import ViewMoreButton from '../components/ViewMoreButton'
 
 class FilmBox extends Component {
 
@@ -39,8 +40,9 @@ class FilmBox extends Component {
     return(
       <div className="FilmBox">
       <h4>Upcoming Film Releases for UK</h4>
+      <hr />
       <FilmList films={this.state.films}/>
-      <a href="https://www.imdb.com/calendar/?region=gb">View Upcoming Releases...</a>
+      <ViewMoreButton />
       </div>
     )
 
